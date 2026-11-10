@@ -11,7 +11,7 @@ It analyzes application permissions based on the app's name and intended purpose
 ## 📸 Project Preview
 
 
-![PrivacyGuard Dashboard](screenshots/Home.png)
+![PrivacyGuard Dashboard](Screenshots/Home.png)
 
 ---
 
@@ -33,25 +33,25 @@ It analyzes application permissions based on the app's name and intended purpose
 
 ### 1. User Registration
 
-![Registration Page](screenshots/Register.png)
+![Registration Page](Screenshots/Register.png)
 
 ### 2. User Login
 
-![Login Page](screenshots/Login.png)
+![Login Page](Screenshots/Login.png)
 
 ### 3. Dashboard
 
-![Home Page](screenshots/Home.png)
+![Home Page](Screenshots/Home.png)
 
 ### 4. Permission Analysis
 
 
-![Analysis Page](screenshots/Analysis.png)
+![Analysis Page](Screenshots/Analysis.png)
 
 ### 5. Analysis History
 
 
-![History Page](screenshots/History.png)
+![History Page](Screenshots/History.png)
 
 ---
 
