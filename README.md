@@ -11,7 +11,7 @@ It analyzes application permissions based on the app's name and intended purpose
 ## 📸 Project Preview
 
 
-![PrivacyGuard Dashboard](Screenshots/Home.png)
+![PrivacyGuard Dashboard](https://github.com/Juhi-singh24/PrivacyGaurd/blob/main/Screenshorts/Home.png)
 
 ---
 
@@ -33,25 +33,25 @@ It analyzes application permissions based on the app's name and intended purpose
 
 ### 1. User Registration
 
-![Registration Page](Screenshots/Register.png)
+![Registration Page](https://github.com/Juhi-singh24/PrivacyGaurd/blob/main/Screenshorts/Register.png)
 
 ### 2. User Login
 
-![Login Page](Screenshots/Login.png)
+![Login Page](https://github.com/Juhi-singh24/PrivacyGaurd/blob/main/Screenshorts/Login.png)
 
 ### 3. Dashboard
 
-![Home Page](Screenshots/Home.png)
+![Home Page](https://github.com/Juhi-singh24/PrivacyGaurd/blob/main/Screenshorts/Home.png)
 
 ### 4. Permission Analysis
 
 
-![Analysis Page](Screenshots/Analysis.png)
+![Analysis Page](https://github.com/Juhi-singh24/PrivacyGaurd/blob/main/Screenshorts/Analysis.png)
 
 ### 5. Analysis History
 
 
-![History Page](Screenshots/History.png)
+![History Page](https://github.com/Juhi-singh24/PrivacyGaurd/blob/main/Screenshorts/History.png)
 
 ---
 
