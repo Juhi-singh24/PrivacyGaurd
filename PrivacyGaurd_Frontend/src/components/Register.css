@@ -1,0 +1,312 @@
+.register{
+  background-color: #291355;
+   background-image: 
+  radial-gradient(circle at 0% 50%, rgba(111, 34, 219, 0.35) 0%, transparent 60%),
+  radial-gradient(circle at 100% 50%, rgba(111, 34, 219, 0.35) 0%, transparent 60%);
+  background-size:cover;
+  background-position: center;
+  width:100%;
+  min-height: 100vh;
+}
+
+.register_card{
+  background-color:#2b1a54;
+  width:40%;
+  margin:100px auto 0;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius:28px;
+  box-shadow: 0 5px 10px rgb(221, 121, 237);
+  padding: 30px 35px;
+  border:2px solid blueviolet;
+}
+
+.heaading{
+  font-size:35px;
+  font-weight: bold;
+  color:white;
+  margin-bottom: 20px;
+
+}
+
+.account{
+  font-size: 40px;
+  font-weight: bold;
+  color:white;
+}
+
+.tag_li{
+  margin-top: 3px;
+  font-size:18px;
+  font-weight: bold;
+  color:rgb(246, 236, 236);
+  margin-bottom: 25px;
+}
+
+.input_bo{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap:6px;
+  width:90%;
+  box-sizing: border-box;
+  background-color: transparent;
+  padding:5px 15px;
+  border-radius: 22px;
+  height:38px;
+  margin-left:15px;
+  margin-bottom: 14px;
+  border:2px solid grey;
+  transition: 0.15s ease;
+  cursor: pointer;
+}
+
+.input_bo:focus-within {
+  border-color:3px solid blueviolet;
+  background-color:white;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+}
+
+.input_bo:hover{
+  border: 2px solid white;
+
+}
+
+.user_icon{
+  font-size: 16px;
+  color:blueviolet;
+  flex-shrink: 0;
+}
+
+.input_box{
+  flex:1;
+  background: none;
+  border:none;
+  border-radius: none;
+  padding: 8px 12px;
+  font-size: 15px;
+  font-weight:bold;
+  color:blueviolet;
+  outline: none;
+}
+
+.input_box::placeholder{
+  color:grey;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.input_box:focus{
+  color:black;
+  font-size: 15px;
+  font-weight: bold;
+
+}
+
+
+.sub {
+  width: 60%;
+  margin:30px auto 0;
+  height:40px;
+  border-radius: 15px;
+  background-color:blueviolet;
+  font-size: 20px;
+  display: block;
+  border:none;
+  color:white;
+  font-weight: 600;
+  font-family:"Poppins" serif;
+  cursor:pointer;
+}
+
+
+.Password{
+  padding:2px 5px;
+  border:none;
+  color:blueviolet;
+  border-radius: 25px;
+  font-size: 15px;
+  padding: 2px 7px;
+
+}
+
+.error{
+  color:white;
+  font-size: 20px;
+  margin-bottom: 7px;
+}
+
+
+
+.login_link{
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Merriweather", sans-serif;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 20px;
+}
+.image_priv{
+  display: flex;
+  flex-direction: row;
+  gap:5px;
+}
+
+.privacy_ico{
+  width:50px;
+  height:45px;
+}
+
+
+.linka{
+  color:blueviolet;
+}
+
+/* Tablets */
+@media screen and (max-width: 1024px) {
+  .register_card {
+    width: 60%;
+    margin: 100px auto 0;
+    padding: 28px 30px;
+  }
+
+  .account {
+    font-size: 35px;
+  }
+
+  .heaading {
+    font-size: 30px;
+  }
+
+  .tag_li {
+    font-size: 16px;
+  }
+
+  .input_bo {
+    width: 95%;
+    margin-left: 0;
+  }
+}
+
+/* Mobile devices */
+@media screen and (max-width: 768px) {
+  .register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 15px;
+    box-sizing: border-box;
+  }
+
+  .register_card {
+    width: 85%;
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 25px 22px;
+    box-sizing: border-box;
+  }
+
+  .account {
+    font-size: 30px;
+  }
+
+  .heaading {
+    font-size: 27px;
+  }
+
+  .tag_li {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  .input_bo {
+    width: 100%;
+    margin-left: 0;
+    height: 42px;
+    padding: 5px 12px;
+  }
+
+  .input_box {
+    font-size: 14px;
+    min-width: 0;
+  }
+
+  .input_box::placeholder {
+    font-size: 13px;
+  }
+
+  .sub {
+    width: 75%;
+    margin: 25px auto 0;
+    display: block;
+    font-size: 17px;
+  }
+
+  .login_link {
+    font-size: 15px;
+  }
+
+  .error {
+    font-size: 16px;
+  }
+}
+
+/* Small mobile devices */
+@media screen and (max-width: 480px) {
+  .register_card {
+    width: 100%;
+    padding: 22px 17px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .account {
+    font-size: 26px;
+  }
+
+  .heaading {
+    font-size: 24px;
+  }
+
+  .tag_li {
+    font-size: 14px;
+  }
+
+  .privacy_ico {
+    width: 42px;
+    height: 40px;
+  }
+
+  .input_bo {
+    height: 40px;
+    gap: 5px;
+  }
+
+  .user_icon {
+    font-size: 14px;
+  }
+
+  .input_box {
+    padding: 7px 5px;
+  }
+
+  .sub {
+    width: 85%;
+    height: 42px;
+    font-size: 16px;
+  }
+
+  .Password {
+    font-size: 13px;
+  }
+
+  .login_link {
+    font-size: 14px;
+  }
+}
+
+
+
+
+
+

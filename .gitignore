@@ -1,0 +1,5 @@
+node_modules/
+dist/
+testEmail.js
+npm-debug.log*
+.env

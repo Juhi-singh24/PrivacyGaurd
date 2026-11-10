@@ -1,0 +1,455 @@
+.analysis{
+  flex:1;
+  background-image: url('../assets/Analysis_background.webp');
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  padding: 35px 50px;
+}
+
+p{
+  word-spacing: 2px;
+}
+
+.no_details{
+  margin-left:10%;
+  margin-top: 10%;
+  padding: 20px 20px;
+  border:2px solid white;
+  width:80%;
+  border-radius: 25px;
+  box-shadow: 2px 14px 14px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  gap:15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.no_details h3{
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Merriweather' sans-serif;
+  color:white;
+}
+
+.butt{
+  padding: 15px 18px;
+  font-family: 'playfair display' serif;
+  font-size: 16px;
+  color:white;
+  background-color: rgb(209, 16, 161);
+  border:2px solid rgb(228, 13, 188);
+  font-weight: 700;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  animation:pop 1.5s infinite;
+}
+
+@keyframes pop{
+  0%, 100%{
+    tranform:scale(1);
+  }
+
+  50%{
+    transform:scale(1.06);
+  }
+}
+
+.butt:hover{
+  opacity:0.7;
+}
+
+
+
+.link1,
+.link1:visited,
+.link1:active,
+.link1:hover{
+  color:white;
+  text-decoration: none;
+}
+
+.application
+
+.details{
+  padding: 25px 38px;
+}
+
+.details h3{
+  font-size: 32px;
+  font-family: "Merriweather",sans-serif;
+  color:white;
+  margin-bottom: 20px;
+}
+
+.permissionanalysis,
+.overall
+{
+  font-size: 20px;
+  font-weight: bold;
+  color:rgb(235, 235, 246);
+  margin-top: 15px;
+  margin-bottom: 10px;
+
+}
+
+.per{
+  font-size: 25px;
+  font-weight: bold;
+  color:white;
+  font-family: "Merriweather", sans-serif;
+  margin-top: 18px;
+  margin-bottom: 20px;
+
+}
+
+.over{
+  font-size: 28px;
+  font-weight: bold;
+  color:white;
+  font-family: "Merriweather", sans-serif;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.permissionana,
+.details
+ p{
+  font-size: 20px;
+  color:blueviolet;
+  font-weight:600;
+  font-family: "Playfair display" serif;
+  line-height: 1.4;
+  margin-bottom: 5px;
+
+}
+
+.overall p{
+  font-size: 20px;
+  color:grey;
+  font-weight:600;
+  font-family: "Playfair display" serif;
+  line-height: 1.4;
+
+}
+
+.anal_icon{
+  font-size: 27px;
+  font-weight: bold;
+  color:rgb(246, 25, 198);
+  margin-right: 14px;
+}
+.details{
+
+  padding: 15px 15px;
+  border-radius: 20px;
+  border:2px solid blue;
+  margin-bottom: 15px;
+  box-shadow: 0 12px 18px rgba(182, 176, 176, 0.15);
+  padding: 15px 25px;
+  background-color: white;
+
+}
+.permissionana{
+  padding: 15px 15px;
+  border-radius: 20px;
+  border:2px solid white;
+  margin-bottom: 15px;
+}
+
+.overallana{
+  padding: 15px 15px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  padding: 15px 15px;
+  background-color: white;
+  border:2px solid blue;
+  box-shadow: 0 12px 18px rgba(0,0,0,0.15);
+}
+
+.overallana p{
+  font-size: 20px;
+  color:blueviolet;
+  font-weight:600;
+  font-family: "Playfair display" serif;
+  line-height: 1.4;
+  margin-bottom: 5px;
+
+}
+
+.bar_icon{
+  font-size: 40px;
+  color:rgb(245, 20, 241);
+}
+
+.change{
+  font-size: 22px;
+  color:rgb(108, 5, 77);
+  font-weight: bold;
+}
+
+.ana_icon{
+  font-size: 40px;
+  font-weight: bold;
+  color:rgb(236, 9, 195);
+  margin-right: 8px;
+}
+
+.appna{
+  font-family: "Poppins" serif;
+  font-weight: bold;
+  color:rgb(240, 236, 240);
+  font-size: 22px;
+}
+
+.applicationdetail p{
+  font-family: "Poppins" serif;
+  font-size: 22px;
+  color:rgb(247, 21, 206);
+  font-weight: bold;
+
+}
+
+.req{
+  margin-top: 23px;
+  margin-bottom: 18px;
+  font-size: 28px;
+  font-weight: bold;
+  font-family: "Merriweather" sans-serif;
+  color:white;
+}
+
+
+.analysis_heading{
+
+  font-size: 40px;
+  font-weight: bold;
+  color:white;
+  font-family: "Merriweather" sans-serif;
+}
+
+.colorr{
+  color:rgb(247, 21, 206);
+}
+
+.analysis_tagline{
+
+  font-size: 20px;
+  font-weight: bold;
+  color:white;
+  margin-bottom: 28px;
+}
+
+.error_mess{
+  margin-top:30px;
+  font-family: "Poppins" sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  color:white;
+  margin-left: 35%;
+  margin-bottom: 0px;
+
+}
+
+
+/* Tablets and smaller laptops */
+@media screen and (max-width: 768px) {
+  .analysis {
+    padding: 25px 20px;
+  }
+
+  .analysis_heading {
+    margin-top: 25px;
+    font-size: 30px;
+  }
+
+  .analysis_tagline {
+    font-size: 17px;
+  }
+
+  .applicationdetail p {
+    font-size: 19px;
+  }
+
+  .req {
+    font-size: 24px;
+  }
+
+  .details {
+    padding: 18px 20px;
+  }
+
+  .details p,
+  .overallana p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .change {
+    font-size: 18px;
+  }
+
+  
+
+  .over {
+    font-size: 24px;
+  }
+
+  .no_details {
+    width: 90%;
+    margin: 60px auto;
+    padding: 20px;
+  }
+
+  .no_details h3 {
+    font-size: 25px;
+  }
+
+  .error_mess {
+    margin-left: 0;
+    text-align: center;
+    font-size: 22px;
+  }
+}
+
+/* Mobile devices */
+@media screen and (max-width: 480px) {
+  .analysis {
+    padding: 18px 12px;
+  }
+  
+  .ana_icon{
+    font-size: 25px;
+  }
+  .analysis_heading {
+    margin-top: 25px;
+    font-size: 25px;
+  }
+
+  .analysis_tagline {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  .applicationdetail p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .req {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  .appna{
+    font-size: 18px;
+  }
+
+  .anal_icon {
+    font-size: 22px;
+    margin-right: 8px;
+  }
+
+  .details,
+  .permissionana,
+  .overallana {
+    padding: 14px 12px;
+    margin-bottom: 14px;
+    border-radius: 14px;
+  }
+
+  .details p,
+  .overallana p,
+  .permissionana p {
+    font-size: 15px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+  }
+
+  .change {
+    font-size: 16px;
+  }
+
+  .overall {
+    font-size: 19px;
+  }
+
+  .over {
+    font-size: 21px;
+  }
+
+  .no_details {
+    width: 100%;
+    margin: 40px auto;
+    padding: 20px 12px;
+    gap: 15px;
+  }
+
+  .no_details h3 {
+    font-size: 21px;
+  }
+
+  .butt {
+    max-width: 100%;
+    padding: 12px 14px;
+    font-size: 14px;
+  }
+
+  .error_mess {
+    margin: 20px 0;
+    font-size: 17px;
+  }
+}
+
+/* Very small mobile devices */
+@media screen and (max-width: 320px) {
+  .analysis {
+    padding: 14px 16px;
+  }
+
+  .ana_icon{
+    font-size: 25px;
+  }
+
+  .analysis_heading {
+    margin-top:40px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    font-size: 25px;
+    
+  }
+
+  .applicationdetail p {
+    font-size: 14px;
+  }
+
+  .req {
+    font-size: 18px;
+  }
+
+  .details,
+  .permissionana,
+  .overallana {
+    padding: 12px 9px;
+  }
+
+  .details p,
+  .overallana p,
+  .permissionana p {
+    font-size: 14px;
+  }
+
+  .change {
+    font-size: 14px;
+  }
+
+  .over {
+    font-size: 19px;
+  }
+
+  .no_details h3 {
+    font-size: 18px;
+  }
+}

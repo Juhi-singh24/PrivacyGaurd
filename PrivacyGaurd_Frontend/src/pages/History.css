@@ -1,0 +1,349 @@
+.history{
+  flex:1;
+  background-image:url('../assets/Analysis_background.webp');
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  padding:30px 60px;
+}
+
+.heading{
+  font-family:"Merriweather" sans-serif;
+  font-size:35px;
+  font-weight:bold;
+  color:white;
+}
+
+.history_icon{
+  font-size: 27px;
+  margin-right:16px;
+  color: rgb(230, 9, 171);
+}
+
+
+
+.heading_tagline{
+  font-family:"Playfair Display" serif;
+  font-size:20px;
+  font-weight:700;
+  color:rgb(230, 219, 219);
+  margin-bottom: 25px;
+}
+
+
+.application_history {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 25px;
+  gap: 20px;
+  border-radius: 25px;
+  background-color: white;
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+  border: 3px solid rgb(80, 80, 244);
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.container1,
+.container2,
+.container3 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+
+.container1 {
+  flex: 2;
+}
+
+.container2 {
+  flex: 2;
+}
+
+.container3 {
+  flex: 1;
+}
+
+.arrow {
+  flex-shrink: 0;
+}
+
+.compat{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.priva{
+  font-size: 20px;
+  font-weight: bold;
+  text-align:none;
+  color:rgb(243, 106, 43);
+
+}
+
+.perm{
+  font-size: 17px;
+  font-weight: bold;
+}
+
+
+
+.app_name{
+  font-size: 28px;
+  font-family: "Playfair Dispaly" sans-serif;
+  font-weight: bold;
+  color:blueviolet;
+}
+
+.app_purpose{
+  font-size: 17px;
+  font-family: "Playfair Display" sans-serif;
+  color:grey;
+  font-weight: bold;
+}
+
+.app_time{
+
+  font-size: 15px;
+  font-family: "Playfair Display" sans-serif;
+  color:grey;
+  font-weight: bold;
+}
+
+.app_permission{
+
+  font-size: 24px;
+  font-family: "Playfair Dispaly" sans-serif;
+  font-weight: bold;
+  color:blueviolet;
+
+}
+
+.arrow{
+
+  border:none;
+  background-color: white;
+  font-size: 13px;
+  cursor:pointer;
+}
+
+.arrow_icon{
+  font-size: 20px;
+  font-weight: 800;
+  color:grey;
+  color:blueviolet;
+}
+
+/* Tablets and smaller laptops */
+@media screen and (max-width: 1024px) {
+  .history {
+    padding: 25px 35px;
+  }
+
+  .heading {
+    font-size: 32px;
+  }
+
+  .heading_tagline {
+    font-size: 18px;
+  }
+
+  .container {
+    gap: 20px;
+  }
+
+  .container1,
+  .container2 {
+    flex: 1.5;
+  }
+
+  .app_name {
+    font-size: 24px;
+  }
+
+  .app_permission {
+    font-size: 21px;
+  }
+
+  .compat,
+  .priva {
+    font-size: 18px;
+  }
+}
+
+/* Tablets and mobile devices */
+@media screen and (max-width: 768px) {
+  .history {
+   
+    padding: 22px 20px;
+  }
+
+  .heading {
+     margin:38px 5px 10px 0;
+    font-size: 32px;
+  }
+
+  .heading_tagline {
+    font-size: 17px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  .history_icon {
+    font-size: 23px;
+    margin-right: 10px;
+  }
+
+  .application_history {
+    padding: 20px;
+    gap: 18px;
+    border-radius: 20px;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 18px;
+  }
+
+  .container1,
+  .container2,
+  .container3 {
+    width: 100%;
+    flex: 1;
+  }
+
+  .container1,
+  .container2 {
+    padding-bottom: 14px;
+    border-bottom: 1px solid #d5d5e0;
+  }
+
+  .app_name {
+    font-size: 23px;
+  }
+
+  .app_purpose,
+  .app_time {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .app_permission {
+    font-size: 20px;
+  }
+
+  .compat,
+  .priva {
+    font-size: 17px;
+  }
+
+  .perm {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .arrow {
+    align-self: flex-end;
+  }
+}
+
+/* Mobile phones */
+@media screen and (max-width: 480px) {
+  .history {
+    padding: 18px 17px;
+  }
+
+  .heading {
+    margin:40px 5px 10px auto;
+    font-size: 27px;
+  }
+
+  .heading_tagline {
+    font-size: 15px;
+  }
+
+  .history_icon {
+    font-size: 21px;
+    margin-right: 7px;
+  }
+
+  .application_history {
+    padding: 16px 13px;
+    gap: 15px;
+    border-width: 2px;
+    border-radius: 17px;
+  }
+
+  .container {
+    gap: 14px;
+  }
+
+  .app_name {
+    font-size: 21px;
+  }
+
+  .app_purpose,
+  .app_time {
+    font-size: 14px;
+  }
+
+  .app_permission {
+    font-size: 18px;
+  }
+
+  .compat,
+  .priva {
+    font-size: 16px;
+  }
+
+  .perm {
+    font-size: 14px;
+  }
+
+  .arrow_icon {
+    font-size: 18px;
+  }
+}
+
+/* Very small mobile screens */
+@media screen and (max-width: 320px) {
+  .history {
+    padding: 14px 12px;
+  }
+
+  .heading {
+    margin:45px 5px 10px 0;
+    font-size: 25px;
+  }
+
+  .heading_tagline {
+    font-size: 14px;
+  }
+
+  .application_history {
+    padding: 13px 10px;
+  }
+
+  .app_name {
+    font-size: 19px;
+  }
+
+  .app_permission {
+    font-size: 17px;
+  }
+
+  .app_purpose,
+  .app_time,
+  .perm {
+    font-size: 13px;
+  }
+}

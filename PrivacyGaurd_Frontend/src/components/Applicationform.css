@@ -1,0 +1,436 @@
+.application_detail{
+  width:80%;
+  margin-top:30px;
+  min-height: 75vh;
+  margin-left: 100px;
+  border-radius: 25px;
+  padding:20px 30px;
+  border:3px solid rgb(213, 207, 235);
+  box-shadow: 0px 8px 10px rgba(0,0,0,0.15);
+}
+
+
+.application_tagline{
+  font-size: 20px;
+  color:white;
+  font-weight:bold;
+  margin-left: 40px;
+  margin-bottom: 12px;
+}
+
+.Name, .Purpose, .Permissions{
+  width:90%;
+  margin-left:40px;
+  margin-bottom:15px;
+  padding: 5px 14px;
+  border: 2px solid grey;
+  outline: none;
+  font-size: 16px;
+  font-weight: bold;
+  color:rgb(232, 27, 153);
+}
+
+.Permissions{
+  width:80%;
+  color:white;
+}
+
+.icon{
+  font-size:16px ;
+  margin-right: 7px;
+  color:white;
+  font-weight: bold;
+}
+.add-icon{
+  font-size:17px ;
+  margin-right: 7px;
+  color:white;
+  font-weight: bold;
+}
+
+.add{
+  margin-left: 10px;
+  padding: 12px 18px;
+  background-color: rgb(240, 50, 211);
+  border: none;
+  box-shadow: 0 10px 18px rgba(0,0,0,0.15);
+  color:white;
+  font-size: 17px;
+  font-weight: 600;
+  border-radius: 14px;
+  cursor:pointer;
+}
+
+.add:hover{
+  opacity: 0.7;
+}
+
+.Name, .Permissions{
+  min-height: 45px;
+  border-radius: 14px;
+}
+
+.Name::placeholder ,.Permissions::placeholder{
+  
+  color:grey;
+  font-weight: bold;
+  font-size: 15px;
+ 
+
+}
+
+.Purpose::placeholder{
+  
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.Purpose{
+  min-height: 100px;
+  border-radius: 14px;
+}
+
+.Name:focus ,.Permissions:focus, .Purpose:focus{
+
+  border-color: rgb(235, 29, 204);
+  font-size: 15px;
+  color:black;
+  font-weight: 600;
+  outline: none;
+
+}
+
+.analyze{
+  margin-left:40px;
+  margin-top:30px;
+  width:90%;
+  padding:12px 12px;
+  font-size: 18px;
+  font-weight: 700;
+  color:white;
+  background-color:rgb(239, 30, 201);
+  border: 2px solid white;
+  border-radius: 14px;
+  border:none;
+  cursor:pointer;
+  box-shadow: 0 10px 18px rgba(0,0,0,0.15);
+}
+
+
+.analyze {
+  animation: pop 1.5s ease-in-out infinite;
+}
+
+@keyframes pop {
+  0%, 100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.02);
+  }
+}
+
+.loader{
+  display:block;
+  width:32px;
+  height:32px;
+  border:3px solid #ddd;
+  border-top:4px solid rgb(243, 33, 225);
+  
+  border-radius: 50%;
+  margin:30px auto 0;
+  animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+  from{
+    transform: rotate(0deg);
+  }
+
+  to{
+    transform:rotate(360deg);
+  }
+}
+
+
+.analyze:hover{
+  opacity:0.7;
+}
+.error{
+  color:rgb(255, 37, 37);
+  margin-left: 40px;
+  margin-bottom:5px;
+  font-weight: 600;
+}
+
+.permissionlist{
+  display: flex;
+  flex-direction: row;
+  gap:8px;
+  margin-left:45px;
+  flex-wrap: wrap;
+  margin-bottom:8px;
+}
+
+.permissionele{
+  padding: 7px 12px;
+  border-radius: 22px;
+  border:2px solid rgb(251, 235, 235);
+  color:white;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+
+.cancel{
+  margin-left: 12px;
+  border:none;
+  outline: none;
+  color:white;
+  background-color: transparent;
+  cursor:pointer;
+  font-weight: 700;
+  font-size: 17px;
+  border-radius: 0;
+  background-color: none;
+}
+
+
+/* Tablets and smaller laptops */
+@media screen and (max-width: 1024px) {
+  .application_detail {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px 24px;
+  }
+
+  .application_tagline {
+    margin-left: 20px;
+    font-size: 19px;
+  }
+
+  .Name,
+  .Purpose,
+  .Permissions {
+    width: 90%;
+    margin-left: 20px;
+  }
+
+  .Permissions {
+    width: 75%;
+  }
+
+  .add {
+    padding: 11px 15px;
+    font-size: 16px;
+  }
+
+  .analyze {
+    width: 90%;
+    margin-left: 20px;
+  }
+
+  .permissionlist {
+    margin-left: 20px;
+  }
+
+  .error {
+    margin-left: 20px;
+  }
+}
+
+/* Tablets and mobile devices */
+@media screen and (max-width: 768px) {
+  .application_detail {
+    width: 100%;
+    margin: 25px auto 0;
+    min-height: auto;
+    padding: 20px;
+    border-width: 2px;
+    border-radius: 20px;
+  }
+
+  .application_tagline {
+    font-size: 18px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+  }
+
+  .Name,
+  .Purpose,
+  .Permissions {
+    width: 100%;
+    margin-left: 0;
+    padding: 10px 12px;
+    font-size: 15px;
+  }
+
+  .Name,
+  .Permissions {
+    min-height: 44px;
+  }
+
+  .Purpose {
+    min-height: 110px;
+  }
+
+  .Name::placeholder,
+  .Permissions::placeholder,
+  .Purpose::placeholder {
+    font-size: 13px;
+  }
+
+  .add {
+    margin-left: 0;
+    padding: 11px 16px;
+    font-size: 15px;
+  }
+
+  .permissionlist {
+    margin-left: 0;
+    gap: 8px;
+  }
+
+  .permissionele {
+    font-size: 15px;
+    padding: 7px 10px;
+    overflow-wrap: anywhere;
+  }
+
+  .cancel {
+    margin-left: 7px;
+  }
+
+  .analyze {
+    width: 96%;
+    margin-left: 0;
+    padding: 12px 8px;
+    margin:22px auto 0;
+    display: block;
+    font-size: 16px;
+    animation: none;
+  }
+
+  .error {
+    margin-left: 0;
+    font-size: 14px;
+  }
+}
+
+/* Mobile phones */
+@media screen and (max-width: 480px) {
+  .application_detail {
+    margin-top: 20px;
+    padding: 16px 12px;
+    border-radius: 16px;
+  }
+
+  .application_tagline {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-left: 2px;
+  }
+
+  .Name,
+  .Purpose,
+  .Permissions {
+    padding: 10px;
+    margin-bottom: 14px;
+    border-radius: 10px;
+  }
+
+  .Name::placeholder,
+  .Permissions::placeholder,
+  .Purpose::placeholder {
+    font-size: 12px;
+  }
+
+  .add {
+    padding: 10px 13px;
+    font-size: 14px;
+    border-radius: 10px;
+  }
+
+  .add-icon {
+    font-size: 15px;
+    margin-right: 4px;
+  }
+
+  .permissionlist {
+    gap: 6px;
+    margin-top: 4px;
+  }
+
+  .permissionele {
+    max-width: 100%;
+    font-size: 13px;
+    padding: 6px 9px;
+    border-width: 1px;
+    border-radius: 18px;
+  }
+
+  .cancel {
+    font-size: 15px;
+    margin-left: 5px;
+  }
+
+  .analyze {
+    margin-top: 20px;
+    padding: 12px 6px;
+    font-size: 15px;
+    border-radius: 10px;
+    animation: none;
+  }
+
+  .loader {
+    width: 28px;
+    height: 28px;
+  }
+
+  .error {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+}
+
+/* Very small mobile screens */
+@media screen and (max-width: 320px) {
+  .application_detail {
+    padding: 12px 8px;
+  }
+
+  .application_tagline {
+    font-size: 14px;
+  }
+
+  .Name,
+  .Purpose,
+  .Permissions {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .Name::placeholder,
+  .Permissions::placeholder,
+  .Purpose::placeholder {
+    font-size: 11px;
+  }
+
+  .add {
+    padding: 9px 10px;
+    font-size: 13px;
+  }
+
+  .permissionele {
+    font-size: 12px;
+    padding: 5px 7px;
+  }
+
+  .analyze {
+    font-size: 13px;
+  }
+}
+
+
