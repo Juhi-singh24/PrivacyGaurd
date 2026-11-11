@@ -25,6 +25,8 @@ useEffect(()=>{
 
     if(error.response?.status === 401){
       setStatus("unauthenticated");
+      setName("");
+      setEmail("");
     }
 
     else if(error.response?.status === 500){

@@ -100,6 +100,7 @@ export function Register(){
         <FaUser className="user_icon" />
         <input 
         className='input_box'
+        autoComplete="name"
         type="text" 
         placeholder="Enter your full Name"
         value={userName}
@@ -122,6 +123,7 @@ export function Register(){
         <FaEnvelope className="user_icon" />
         <input 
         className='input_box'
+        autoComplete="email"
         type="email" 
         placeholder="Enter your email address e.g xyz@gmail.com"
         value={email}
@@ -145,6 +147,7 @@ export function Register(){
         <FaLock className="user_icon" />
         <input
         className="input_box"
+        autoComplete="new-password"
         placeholder="Enter your password"
         type = {isShowPassword ? "text" : "password"}
         value={password}

@@ -99,6 +99,7 @@ export function Login(){
           <div className="input_valid">
              <FaEnvelope className="user_icon"/>
             <input className="email"
+            autoComplete="email"
             type= "email"
             value = {userEmailId}
             placeholder = "Enter the email address"
@@ -121,6 +122,7 @@ export function Login(){
             <FaLock className="user_icon"/>
 
             <input className="input_box"
+            autoComplete="new-password"
             type = {isShowPassword ? "text" : "password"}
             value = {userPassword}
             placeholder = "Enter the password"
