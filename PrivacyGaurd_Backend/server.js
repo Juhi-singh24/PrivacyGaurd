@@ -299,10 +299,10 @@ app.post("/api/forgot-password", async (req, res) => {
 
     await find_email.save();
 
-    const resetURL = `http://localhost:5173/reset-password/${resetToken}`;
+    const resetURL = `${process.env.FRONTEND_URL}/reset-password/${resetToken}`;
 
     await transporter.sendMail({
-      from: process.env.emailAddress,
+      from: emailAddress,
       to: find_email.email,
       subject: "Reset Your PrivacyGuard Password",
       html: `
@@ -377,6 +377,8 @@ app.post("/api/forgot-password", async (req, res) => {
       message: "Email has sent successfully",
     });
   } catch (error) {
+    console.error("Forgot Password Error:", error);
+
     res.status(500).json({
       field: "general",
       message: "Password reset is cancelled due to some internal error",
