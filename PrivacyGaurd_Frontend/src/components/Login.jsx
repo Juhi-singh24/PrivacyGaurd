@@ -141,7 +141,7 @@ export function Login(){
           
           </div>
 
-          <h3 className="forgett"><Link to='/forget-password' className="linkf">Forget Password ?</Link></h3>
+          {/*<h3 className="forgett"><Link to='/forget-password' className="linkf">Forget Password ?</Link></h3>*/}
 
           {(error === "user_password" ) && <p className="error">{errorMessage}</p>}
 
