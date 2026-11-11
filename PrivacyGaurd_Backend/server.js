@@ -18,9 +18,14 @@ const openrouter_api_key = process.env.OPEN_ROUTER_API_KEY;
 const emailAddress = process.env.EMAIL_USER;
 const password = process.env.APP_PASSWORD;
 
+const allowedOrigins = [
+  "http://localhost:5173",
+  process.env.FRONTEND_URL,
+].filter(Boolean);
+
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: allowedOrigins,
     credentials: true,
   }),
 );
@@ -217,10 +222,12 @@ app.post("/api/login", async (req, res) => {
       { expiresIn: "1h" },
     );
 
+    const isProduction = process.env.NODE_ENV === "production"
+
     res.cookie("token", token, {
       httpOnly: true,
-      secure: false,
-      sameSite: "lax",
+      secure: isProduction,
+      sameSite: isProduction ? "none" : "lax",
       maxAge: 2 * 60 * 60 * 1000,
     });
 
