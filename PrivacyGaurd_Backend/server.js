@@ -161,6 +161,9 @@ app.post("/api/register", async (req, res) => {
       message: "Data is saved correctly",
     });
   } catch (error) {
+
+    console.error("Registration Error:", error);
+
     res.status(500).json({
       message: "Data is not retrived successfully",
     });
