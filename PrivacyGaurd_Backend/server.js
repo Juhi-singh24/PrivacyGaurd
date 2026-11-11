@@ -791,7 +791,7 @@ app.get("/api/history/:app_id", authMiddleware, async (req, res) => {
   }
 });
 
-app.listen(port, () => {
+app.listen(port,"0.0.0.0", () => {
   console.log(`App listen at ${port} `);
   console.log("Api key loaded :", Boolean(openrouter_api_key));
 });
