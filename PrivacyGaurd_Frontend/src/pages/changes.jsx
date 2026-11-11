@@ -46,13 +46,13 @@ export function Changes() {
             <p>
               Removed: {" "}
               {change.changes.permissions.removed.length > 0
-                ? change.changes.permissions.removed
+                ? change.changes.permissions.removed.join(" , ")
                 : "None"}
             </p>
             <p>
               Unchanged :{" "}
               {change.changes.permissions.unchanged.length > 0
-                ? change.changes.permissions.unchanged
+                ? change.changes.permissions.unchanged.join(" , ")
                 : "None"}
             </p>
             </div>
