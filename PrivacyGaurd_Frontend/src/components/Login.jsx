@@ -4,7 +4,7 @@ import API from "../api/axiosInstance";
 import { FaEnvelope, FaLock } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import {Link} from 'react-router-dom';
-import './login.css';
+import './Login.css';
 
 export function Login(){
 
