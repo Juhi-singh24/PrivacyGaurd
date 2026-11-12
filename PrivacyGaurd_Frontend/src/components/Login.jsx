@@ -13,6 +13,7 @@ export function Login(){
   const [isShowPassword,setIsShowPassword] = useState(false);
   const [error,setError] = useState("");
   const [errorMessage,setErrorMessage] = useState("");
+  const [load,setload] = useState(false);
   const navigate = useNavigate();
 
   function handleShowPassword(){
@@ -37,6 +38,7 @@ export function Login(){
     }
 
     else {
+      setload(true);
       API.post('/api/login',{
         userEmailId,
         userPassword, 
@@ -49,6 +51,7 @@ export function Login(){
 
       })
       .catch((error) => {
+        setload(false);
         
         if(error.response){
           console.log("Backend response:", error.response?.data);
@@ -147,7 +150,7 @@ export function Login(){
 
           {(error === "user_password" ) && <p className="error">{errorMessage}</p>}
 
-          <button type='submit' className="login_butt">Log in</button>
+          {load ? (<span className="spinner"/>) : (<button type='submit' className="login_butt">Log in</button>)}
 
           <p className="tag_line">Don't have an account? <Link to='/' className="linka">Create account</Link></p>
 

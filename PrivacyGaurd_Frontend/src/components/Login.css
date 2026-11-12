@@ -27,6 +27,30 @@ input::-ms-clear {
 
 }
 
+.spinner{
+  display:block;
+  width:32px;
+  height:32px;
+  border:3px solid #ddd;
+  border-top:4px solid blueviolet;
+  
+  border-radius: 50%;
+  margin:30px auto 0;
+  animation:spin 1.2s linear infinite;
+
+}
+
+@keyframes spin{
+  from{
+     transform: rotate(0deg);
+  }
+
+  to{
+    transform:rotate(360deg);
+  }
+ 
+}
+
 
 
 .forgett {
@@ -86,7 +110,7 @@ input::-ms-clear {
   align-items: center;
   flex-shrink: 0;
   width: 90%;
-  height:35px;
+  height:38px;
   margin-left: 15px;
   gap:8px;
   padding: 5px 15px;
