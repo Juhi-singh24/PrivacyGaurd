@@ -51,7 +51,7 @@ export function Login(){
 
       })
       .catch((error) => {
-        setload(false);
+    
         
         if(error.response){
           console.log("Backend response:", error.response?.data);
@@ -70,6 +70,9 @@ export function Login(){
     );
   } 
 
+      })
+      .finally(() => {
+        setload(false);
       })
     }
 

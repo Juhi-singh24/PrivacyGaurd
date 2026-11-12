@@ -222,7 +222,7 @@ app.post("/api/login", async (req, res) => {
     const token = jwt.sign(
       { userId: email_saved._id },
       process.env.JWT_SECRET,
-      { expiresIn: "1h" },
+      { expiresIn: "2h" },
     );
 
     const isProduction = process.env.NODE_ENV === "production"
@@ -238,6 +238,7 @@ app.post("/api/login", async (req, res) => {
       message: "Login Successfully",
     });
   } catch (error) {
+    console.error("Login error:", error);
     res.status(400).json({
       message: "Login failed",
     });
