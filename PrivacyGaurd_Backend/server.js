@@ -176,7 +176,7 @@ app.post("/api/login", async (req, res) => {
     const user_password = req.body.userPassword;
     const minimumAllowedLength = 8;
 
-    if (email_login.trim() === "" || typeof email_login !== "string") {
+    if (typeof email_login !== "string" || email_login.trim() === "") {
       return res.status(400).json({
         field: "user_email",
         message: "Please fill the email e.g xyz@gmail.com",
@@ -185,8 +185,7 @@ app.post("/api/login", async (req, res) => {
 
     const email_saved = await userModel.findOne({ email: email_login });
 
-    console.log("Email received:", email_login);
-    console.log("User found:", Boolean(email_saved));
+    
 
     if (!email_saved) {
       return res.status(400).json({
